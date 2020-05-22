@@ -1,0 +1,15 @@
+def BinaryReversal(str):
+  #convert str to int
+  x = int(str)
+  #convert to binary
+  y = bin(x).replace("0b", "")  
+  #reverse binary
+  flip = y [::-1]
+  #convert binary to decimal
+  z = int(flip,2)
+  
+  return z
+
+
+# keep this function call here 
+print(BinaryReversal(input()))
